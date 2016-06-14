@@ -20,32 +20,32 @@ class TestAnimals < MiniTest::Test
 
   def test_bear_name
     assert_equal("Harry", @harry.name)
-    assert_equal("Joe", @joe.name)
-    assert_equal("Mary", @mary.name)
+    # assert_equal("Joe", @joe.name)
+    # assert_equal("Mary", @mary.name)
   end
 
   def test_bear_type
     assert_equal("brown", @harry.type)
-    assert_equal("grizzly", @joe.type)
-    assert_equal("koala", @mary.type)
+    # assert_equal("grizzly", @joe.type)
+    # assert_equal("koala", @mary.type)
   end
 
   def test_bear_food
     assert_equal([], @harry.food)
-    assert_equal([], @joe.food)
-    assert_equal([], @mary.food)
+    # assert_equal([], @joe.food)
+    # assert_equal([], @mary.food)
   end
 
   def test_bear_roar
     assert_equal("ROOARRRRRGGGHHHH", @harry.roar)
-    assert_equal("ROOARRRRRGGGHHHH", @joe.roar)
-    assert_equal("ROOARRRRRGGGHHHH", @mary.roar)
+    # assert_equal("ROOARRRRRGGGHHHH", @joe.roar)
+    # assert_equal("ROOARRRRRGGGHHHH", @mary.roar)
   end
 
   def test_fish_name
     assert_equal("Nemo", @nemo.name)
-    assert_equal("Fishy", @fishy.name)
-    assert_equal("Eric", @eric.name)
+    # assert_equal("Fishy", @fishy.name)
+    # assert_equal("Eric", @eric.name)
   end
 
   def test_num_fishes_in_river
