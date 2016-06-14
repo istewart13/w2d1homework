@@ -3,7 +3,7 @@ require_relative('../bear')
 require_relative('../fish')
 require_relative('../river')
 
-class TestBank < MiniTest::Test
+class TestAnimals < MiniTest::Test
 
   def setup
     @nemo = Fish.new("Nemo")
