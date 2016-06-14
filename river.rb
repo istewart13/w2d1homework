@@ -1,5 +1,5 @@
 class River
-  attr_accessor :fishies
+  #attr_accessor :fishies
 
   def initialize(fishies)
     @fishies = fishies
