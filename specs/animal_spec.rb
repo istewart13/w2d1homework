@@ -52,8 +52,23 @@ class TestBank < MiniTest::Test
     assert_equal(3, @river.count_fish)
   end
 
-  def test_take_fish_from
-    @harry.take_fish_from
-    assert_equal("Nemo", @nemo.name)
+  def test_get_fish
+    fishy = @river.get_fish()
+    assert_equal("Eric", @eric.name())
+  end
+
+  def test_take_fish_from_river
+    @harry.take_fish_from(@river)
+    assert_equal(1, @harry.food_count)
+    assert_equal(2, @river.count_fish)
+  end
+
+  def test_take_fish_from_empty_river
+    @harry.take_fish_from(@river)
+    @harry.take_fish_from(@river)
+    @harry.take_fish_from(@river)
+    @harry.take_fish_from(@river)
+    assert_equal(3, @harry.food_count)
+    assert_equal(0, @river.count_fish)
   end
 end

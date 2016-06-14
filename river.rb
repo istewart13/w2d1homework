@@ -9,4 +9,8 @@ class River
     return @fishies.length
   end
 
+  def get_fish
+    @fishies.pop()
+  end
+
 end

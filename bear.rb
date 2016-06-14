@@ -1,5 +1,3 @@
-require_relative('river')
-
 class Bear
   attr_reader :name, :type, :food
 
@@ -13,8 +11,12 @@ class Bear
     return "ROOARRRRRGGGHHHH"
   end
 
-  def take_fish_from
-    #fish = @fish.pop()
-    #@food << fish
+  def food_count
+    return @food.length
+  end
+
+  def take_fish_from(river)
+    fish = river.get_fish()
+    @food << fish if !fish.nil?
   end
 end
