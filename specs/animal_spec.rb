@@ -64,11 +64,9 @@ class TestAnimals < MiniTest::Test
   end
 
   def test_take_fish_from_empty_river
-    @harry.take_fish_from(@river)
-    @harry.take_fish_from(@river)
-    @harry.take_fish_from(@river)
-    @harry.take_fish_from(@river)
-    assert_equal(3, @harry.food_count)
-    assert_equal(0, @river.count_fish)
+    empty_river = River.new([])
+    @harry.take_fish_from(empty_river)
+    assert_equal(0, @harry.food_count)
+    assert_equal(0, empty_river.count_fish)
   end
 end
