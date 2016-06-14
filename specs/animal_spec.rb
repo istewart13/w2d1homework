@@ -31,9 +31,9 @@ class TestAnimals < MiniTest::Test
   end
 
   def test_bear_food
-    assert_equal([], @harry.food)
-    # assert_equal([], @joe.food)
-    # assert_equal([], @mary.food)
+    assert_equal(0, @harry.food_count)
+    # assert_equal(0, @joe.food_count)
+    # assert_equal(0, @mary.food_count)
   end
 
   def test_bear_roar
